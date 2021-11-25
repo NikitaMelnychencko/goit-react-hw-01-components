@@ -4,6 +4,8 @@ const Section = ({ children }) => {
   return <section>{children}</section>;
 };
 
-Section.propTypes = {};
+Section.propTypes = {
+  children: PropTypes.node,
+};
 
 export default Section;
