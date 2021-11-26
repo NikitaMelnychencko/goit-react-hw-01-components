@@ -21,7 +21,9 @@ export default function App() {
           stats={user.stats}
         />
       </Section>
-      <Statistics title="Upload stats" stats={data} />
+      <Section>
+        <Statistics title="Upload stats" stats={data} />
+      </Section>
       <Section>
         <FriendList friends={friends} />
       </Section>

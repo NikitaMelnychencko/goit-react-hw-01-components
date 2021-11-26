@@ -1,0 +1,48 @@
+.Profile {
+  background-color: #ffffff;
+}
+.Description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.Avatar {
+  width: 100px;
+  height: 100px;
+  background-color: #808080;
+  border: solid 2px #000000;
+  border-radius: 50%;
+  margin: 40px 0;
+}
+.Name,
+.Tag {
+  margin-bottom: 10px;
+}
+.Stats {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(128, 128, 128, 0.2);
+}
+.Item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+  width: 100%;
+  border-top: solid 3px rgba(99, 94, 94, 0.1);
+}
+.Item + .Item {
+  border-left: solid 3px rgba(99, 94, 94, 0.1);
+}
+
+.Label {
+  margin-bottom: 5px;
+}
+.Quantity {
+  font-weight: 700;
+}

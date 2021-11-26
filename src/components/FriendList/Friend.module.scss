@@ -1,0 +1,28 @@
+.FriendList {
+  background: transparent;
+}
+.Item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding: 10px 0;
+
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: solid 1px #000000;
+  & + .Item {
+    margin-top: 5px;
+  }
+}
+.Name,
+.Avatar {
+  margin-left: 20px;
+}
+.Status {
+  margin-left: 10px;
+  width: 15px;
+  height: 15px;
+  border: solid 1px #000000;
+  border-radius: 50%;
+}

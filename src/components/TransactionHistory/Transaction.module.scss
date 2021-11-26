@@ -1,0 +1,28 @@
+.TransactionHistory {
+  width: 100%;
+  border-spacing: 0;
+  background-color: #ffffff;
+}
+.TableTitel {
+  background-color: #00b7ff;
+}
+.TableTitel th {
+  padding: 10px 0;
+  color: #ffffff;
+}
+.TableTitel th + th {
+  border-left: 1px solid #ffffff;
+}
+
+.TransactionBody {
+  text-align: center;
+}
+.TransactionBody td {
+  padding: 10px 0px;
+}
+.TransactionBody tr:nth-child(2n) {
+  background-color: rgba(128, 128, 128, 0.1);
+}
+.Line td + td {
+  border-left: 1px solid rgba(128, 128, 128, 0.3);
+}

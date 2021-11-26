@@ -1,11 +1,18 @@
 import PropTypes from 'prop-types';
+import s from './Friend.module.scss';
 
 const FriendListItem = ({ avatar, name, isOnline }) => {
+  let color;
+  if (isOnline) {
+    color = '#008000';
+  } else {
+    color = '#ff0000';
+  }
   return (
     <>
-      <span className="status" data-set={isOnline}></span>
-      <img className="avatar" src={avatar} alt="User avatar" width="48" />
-      <p className="name">{name}</p>
+      <span className={s.Status} style={{ backgroundColor: `${color}` }}></span>
+      <img className={s.Avatar} src={avatar} alt="User avatar" width="48" />
+      <p className={s.Name}>{name}</p>
     </>
   );
 };
