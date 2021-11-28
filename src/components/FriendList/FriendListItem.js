@@ -9,11 +9,11 @@ const FriendListItem = ({ avatar, name, isOnline }) => {
     color = '#ff0000';
   }
   return (
-    <>
+    <li className={s.Item}>
       <span className={s.Status} style={{ backgroundColor: `${color}` }}></span>
       <img className={s.Avatar} src={avatar} alt="User avatar" width="48" />
       <p className={s.Name}>{name}</p>
-    </>
+    </li>
   );
 };
 

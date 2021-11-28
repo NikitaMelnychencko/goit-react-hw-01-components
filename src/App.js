@@ -13,7 +13,6 @@ export default function App() {
     <>
       <Section>
         <Profile
-          key={'Profile'}
           username={user.username}
           tag={user.tag}
           location={user.location}

@@ -3,11 +3,11 @@ import s from './Transaction.module.scss';
 
 const TransactionItem = ({ type, amount, currency }) => {
   return (
-    <>
+    <tr className={s.Line}>
       <td>{type}</td>
       <td>{amount}</td>
       <td>{currency}</td>
-    </>
+    </tr>
   );
 };
 
